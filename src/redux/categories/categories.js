@@ -1,11 +1,11 @@
-const CHECK_STATUS = "bookstore/category/CHECK_STATUS";
+const CHECK_STATUS = 'bookstore/category/CHECK_STATUS';
 
 const initialState = [];
 
 export default function reducer(state = initialState, action = {}) {
   switch (action.type) {
     case CHECK_STATUS:
-      return "Under construction";
+      return 'Under construction';
     default:
       return state;
   }
