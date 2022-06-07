@@ -21,7 +21,7 @@ const Book = (props) => {
           <li>
             <button
               type="button"
-              className="bookbtn"
+              className="bookbtn removebtn"
               onClick={() => dispatch(deleteBook(book.id))}
             >
               Remove

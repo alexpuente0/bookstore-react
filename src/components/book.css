@@ -39,3 +39,7 @@
   font-size: medium;
   color: rgb(24, 119, 179);
 }
+
+.removebtn {
+  cursor: pointer;
+}
