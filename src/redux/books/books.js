@@ -4,9 +4,13 @@ const ADD_BOOK = 'bookstore-react/book/ADD_BOOK';
 const DELETE_BOOK = 'bookstore-react/book/DELETE_BOOK';
 
 const initialState = [
-  { title: 'The Da Vinci Code', author: 'Dan Brown', id: uuidv4() },
-  { title: 'Catcher in the Rye', author: 'J.D. Salinger', id: uuidv4() },
-  { title: 'The Great Gatsby', author: 'F. Scott Fitzgerald', id: uuidv4() },
+  { title: 'John Dies at the End', author: 'David Wong', id: uuidv4() },
+  { title: 'IT', author: 'Stephen King', id: uuidv4() },
+  {
+    title: 'Harry Potter and the Chamber of Secrets',
+    author: 'JK Rowling',
+    id: uuidv4(),
+  },
 ];
 
 export default function reducer(state = initialState, action = {}) {
