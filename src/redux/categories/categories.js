@@ -5,7 +5,7 @@ const initialState = [];
 export default function reducer(state = initialState, action = {}) {
   switch (action.type) {
     case CHECK_STATUS:
-      return 'Under construction';
+      return 'Coming Soon';
     default:
       return state;
   }
