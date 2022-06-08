@@ -9,17 +9,15 @@ import Categories from './pages/categories';
 import store from './redux/configureStore';
 
 const App = () => (
-  <>
-    <BrowserRouter>
-      <Provider store={store}>
-        <Navbar />
-        <Routes>
-          <Route path="/" element={<BookContainer />} />
-          <Route path="/categories" element={<Categories />} />
-        </Routes>
-      </Provider>
-    </BrowserRouter>
-  </>
+  <BrowserRouter>
+    <Provider store={store}>
+      <Navbar />
+      <Routes>
+        <Route path="/" element={<BookContainer />} />
+        <Route path="/categories" element={<Categories />} />
+      </Routes>
+    </Provider>
+  </BrowserRouter>
 );
 
 export default App;
