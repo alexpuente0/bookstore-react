@@ -22,7 +22,7 @@ const Book = (props) => {
             <button
               type="button"
               className="bookbtn removebtn"
-              onClick={() => dispatch(deleteBook(book.id))}
+              onClick={() => dispatch(deleteBook(book.item_id))}
             >
               Remove
             </button>
@@ -42,7 +42,7 @@ export default Book;
 
 Book.propTypes = {
   book: PropTypes.shape({
-    id: PropTypes.string.isRequired,
+    item_id: PropTypes.string.isRequired,
     title: PropTypes.string.isRequired,
     author: PropTypes.string.isRequired,
   }).isRequired,
