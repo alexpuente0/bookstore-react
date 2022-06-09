@@ -1,19 +1,23 @@
 import { Link } from 'react-router-dom';
+import userdefault from '../assets/defaultuser.png';
 
 const Navbar = () => (
-  <>
-    <h1>Bookstore CMS</h1>
-    <div className="bookscontainer">
-      <ul>
-        <li>
-          <Link to="/">Books </Link>
-        </li>
-        <li>
-          <Link to="/categories">Categories</Link>
-        </li>
-      </ul>
+  <div className="head-links">
+    <div className="separator">
+      <h1 className="toptitle">Bookstore CMS</h1>
+      <div className="bookscontainer">
+        <ul className="toplinks">
+          <li>
+            <Link to="/">BOOKS </Link>
+          </li>
+          <li>
+            <Link to="/categories">CATEGORIES</Link>
+          </li>
+        </ul>
+      </div>
     </div>
-  </>
+    <img src={userdefault} alt="user" className="user" />
+  </div>
 );
 
 export default Navbar;
