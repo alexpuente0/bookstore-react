@@ -21,7 +21,8 @@ const AddBook = () => {
         <div className="input-cont">
           <input type="text" id="title" placeholder="Book Title" required />
           <input type="text" id="author" placeholder="Author" required />
-          <button type="submit">Add New Book</button>
+          <span className="category">Category ⏷</span>
+          <button type="submit">ADD BOOK</button>
         </div>
       </form>
     </div>
