@@ -14,7 +14,7 @@
 
 body {
   font-family: var(--Monserrat);
-  background-color: var(--AlmostWhite)
+  background-color: var(--AlmostWhite);
 }
 
 .toptitle {
@@ -179,7 +179,8 @@ body {
 }
 
 .input-cont #title,
-#author, .category {
+#author,
+.category {
   border: 1px solid var(--DarkGray);
   height: 2rem;
   font-family: var(--Monserrat);
@@ -200,7 +201,7 @@ body {
   padding: 1px 2px 1px 15px;
   line-height: 240%;
   font-size: 0.813rem;
-  color: #777
+  color: #777;
 }
 
 .input-cont button {
