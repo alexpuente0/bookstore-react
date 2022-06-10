@@ -15,14 +15,15 @@ const AddBook = () => {
   };
 
   return (
-    <div>
+    <div className="add-book-cont">
       <form onSubmit={handleSubmit}>
         <h2>Add a Book</h2>
-        <p>Title:</p>
-        <input type="text" id="title" placeholder="Title" required />
-        <p>Author:</p>
-        <input type="text" id="author" placeholder="Author" required />
-        <button type="submit">Add New Book</button>
+        <div className="input-cont">
+          <input type="text" id="title" placeholder="Book Title" required />
+          <input type="text" id="author" placeholder="Author" required />
+          <span className="category">Category ⏷</span>
+          <button type="submit">ADD BOOK</button>
+        </div>
       </form>
     </div>
   );

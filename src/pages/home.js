@@ -3,7 +3,6 @@ import AddBook from '../components/addBook';
 
 const Home = () => (
   <div>
-    <h1>Book List</h1>
     <BookContainer />
     <AddBook />
   </div>
