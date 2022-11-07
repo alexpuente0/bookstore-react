@@ -1,6 +1,6 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# Math Magicians
+# BookStore CMS
 
 > This project its a Single Page Application to keep track of Books and add your own to the list.
 
