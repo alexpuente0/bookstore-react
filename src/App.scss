@@ -216,3 +216,71 @@ body {
   border-radius: 3px;
   height: 2rem;
 }
+
+@media screen and (max-width: 768px) {
+
+  .main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+  }
+
+  .head-links {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .user {
+  display: none;
+  }
+
+  .main-book-container {
+    flex-direction: column;
+  }
+
+  .separator {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .everyBook {
+    width: 100%;
+  }
+
+  .spcategory {
+  align-self: center;
+  }
+
+  .chapter-info {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 20px;
+    align-items: center;
+  }
+
+  .btncont {
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+  .bookbtn {
+    padding: 5px 0 10px 0;
+  }
+  .removebtn {
+    padding: 5px 0 10px 0;
+  }
+  .input-cont {
+    flex-direction: column;
+  }
+  .input-cont #title,
+  #author,
+  .category {
+    width: 100%;
+  }
+  .input-cont #author {
+    width: 100%;
+  }
+}
+  
