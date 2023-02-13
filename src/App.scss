@@ -1,0 +1,289 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto+Slab:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@700&display=swap");
+
+:root {
+  // Fonts
+  --Monserrat: "Montserrat", sans-serif;
+  --Roboto: "Roboto Slab", serif;
+  // Colors
+  --AlmostWhite: #fafafa;
+  --SkyBlue: #0290ff;
+  --DarkGray: #8080803d;
+  --BlueOcean: #4386bf;
+}
+
+body {
+  font-family: var(--Monserrat);
+  background-color: var(--AlmostWhite);
+}
+
+.toptitle {
+  color: var(--SkyBlue);
+  width: 15rem;
+  height: 2.313rem;
+  font-size: 1.875rem;
+}
+
+.head-links {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.toplinks {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+}
+
+.toplinks li a {
+  font-family: var(--Monserrat);
+  width: 3.688rem;
+  height: 1rem;
+  color: #12121283;
+  text-decoration: none;
+  font-size: 0.813rem;
+}
+
+.toplinks li a:hover {
+  color: #121212;
+  font-weight: 800;
+}
+
+.separator {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.user {
+  height: 25px;
+  width: 20px;
+}
+
+// Book
+
+.main-book-container {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  border: 1px solid var(--DarkGray);
+  padding: 15px;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.btncont {
+  display: flex;
+  list-style: none;
+  padding: 0;
+}
+
+.everyBook {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+}
+
+.spcategory {
+  font-size: 0.875rem;
+  font-weight: bold;
+  opacity: 0.5;
+}
+
+.sptitle {
+  font-family: var(--Roboto);
+  font-size: 1.375rem;
+  font-weight: bold;
+}
+
+.spauthor {
+  font-family: var(--Roboto);
+  font-size: 0.875rem;
+  font-weight: 300;
+  color: var(--BlueOcean);
+}
+
+.bookbtn {
+  font-family: var(--Roboto);
+  border: none;
+  padding: 5px 10px 10px 0;
+  font-size: 0.875rem;
+  font-weight: 300;
+  color: var(--BlueOcean);
+  background: none;
+}
+
+.removebtn {
+  cursor: pointer;
+}
+
+//chapter
+
+.chapter-info {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.chapter-info p {
+  margin: 0;
+  opacity: 0.5;
+  font-family: var(--Roboto);
+  font-size: 0.813rem;
+  font-weight: 300;
+}
+
+.chapter-no {
+  font-family: var(--Roboto);
+  font-size: 1rem;
+  font-weight: 300;
+  font-stretch: normal;
+}
+
+.update {
+  width: 8.938rem;
+  height: 1.5rem;
+  font-family: var(--Roboto);
+  font-size: 0.813rem;
+  font-weight: 300;
+  text-align: center;
+  border: none;
+  background-color: var(--SkyBlue);
+  color: var(--AlmostWhite);
+  border-radius: 3px;
+}
+
+// Add a Book
+
+.add-book-cont {
+  padding-top: 4.438rem;
+}
+
+.add-book-cont h2 {
+  font-family: var(--Monserrat);
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: #888;
+}
+
+.input-cont {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 5px;
+}
+
+.input-cont #title,
+#author,
+.category {
+  border: 1px solid var(--DarkGray);
+  height: 2rem;
+  font-family: var(--Monserrat);
+  padding-left: 15px;
+  align-items: center;
+}
+
+.input-cont #title {
+  width: 50%;
+}
+
+.input-cont #author {
+  width: 20%;
+}
+
+.category {
+  width: 20%;
+  padding: 1px 2px 1px 15px;
+  line-height: 240%;
+  font-size: 0.813rem;
+  color: #777;
+}
+
+.input-cont button {
+  width: 8.938rem;
+  font-family: var(--Roboto);
+  font-size: 0.813rem;
+  font-weight: 300;
+  text-align: center;
+  border: none;
+  background-color: var(--SkyBlue);
+  color: var(--AlmostWhite);
+  border-radius: 3px;
+  height: 2rem;
+}
+
+@media screen and (max-width: 768px) {
+  .main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+  }
+
+  .head-links {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .user {
+    display: none;
+  }
+
+  .main-book-container {
+    flex-direction: column;
+  }
+
+  .separator {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .everyBook {
+    width: 100%;
+  }
+
+  .spcategory {
+    align-self: center;
+  }
+
+  .chapter-info {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 20px;
+    align-items: center;
+  }
+
+  .btncont {
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+
+  .bookbtn {
+    padding: 5px 0 10px 0;
+  }
+
+  .removebtn {
+    padding: 5px 0 10px 0;
+  }
+
+  .input-cont {
+    flex-direction: column;
+  }
+
+  .input-cont #title,
+  #author,
+  .category {
+    width: 100%;
+  }
+
+  .input-cont #author {
+    width: 100%;
+  }
+}
