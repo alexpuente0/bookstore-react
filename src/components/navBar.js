@@ -4,7 +4,7 @@ import userdefault from '../assets/defaultuser.png';
 const Navbar = () => (
   <div className="head-links">
     <div className="separator">
-      <h1 className="toptitle">Bookstore CMS</h1>
+      <h1 className="toptitle">Bookstore CMB</h1>
       <div className="bookscontainer">
         <ul className="toplinks">
           <li>
