@@ -218,7 +218,6 @@ body {
 }
 
 @media screen and (max-width: 768px) {
-
   .main {
     display: flex;
     flex-direction: column;
@@ -233,7 +232,7 @@ body {
   }
 
   .user {
-  display: none;
+    display: none;
   }
 
   .main-book-container {
@@ -250,7 +249,7 @@ body {
   }
 
   .spcategory {
-  align-self: center;
+    align-self: center;
   }
 
   .chapter-info {
@@ -265,22 +264,26 @@ body {
     flex-direction: row;
     justify-content: space-evenly;
   }
+
   .bookbtn {
     padding: 5px 0 10px 0;
   }
+
   .removebtn {
     padding: 5px 0 10px 0;
   }
+
   .input-cont {
     flex-direction: column;
   }
+
   .input-cont #title,
   #author,
   .category {
     width: 100%;
   }
+
   .input-cont #author {
     width: 100%;
   }
 }
-  
