@@ -9,7 +9,7 @@
 
 ## Built With
 
-- React
+- React/Redux
 
 ## Getting Started
 
@@ -17,7 +17,7 @@ In this project are creating a SPA using React
 
 ## Live Demo
 
-Coming Soon
+[Here](https://celadon-moon-beam-bsr.netlify.app)
 
 ## Installation
 
